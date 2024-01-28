@@ -15,12 +15,12 @@ html{
     margin: auto;
 }
 
-.navbar{
+#navbar{
     background-color: #f4f4f4;
     color: #044700;
 }
     
-.navbar a{
+#navbar a{
     color: #f4f4f4;
     text-decoration: none;
     font-size: 14px;
