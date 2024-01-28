@@ -1,8 +1,21 @@
-body{
+/* body{
     background-color: #f4f4f4;
     color: #555;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.6em;
     margin: 0;
+} */
+
+html{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 40rem;
+    margin: auto;
+}
+
+img{
+    width: calc(100%/3);
+    float: left;
+    height: auto;
 }

@@ -2,27 +2,47 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spartan Swag</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <div id="app"></div>
-    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <!-- Babel Script -->
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script type="text/jsx">
-      const domNode = document.getElementById('app');
-      const root = ReactDOM.createRoot(domNode);
-      root.render(<h1>Spartan Swag</h1>);
-    </script>
-    <!-- <header id="main-header">
+    <header id="main-header">
         <div class="container">
             <h1> Spartan Swag </h1>
         </div>
     </header>
     <p> Welcome to Spartan Swag! </p>
-    <p> Let's find some free stuff</p> -->
+    <p> Let's find some free stuff</p>
+    <div class="container">
+    <script>
+        let domainUrl = "https://graph.instagram.com/me/media?"
+        let fields = "feilds=media_url"
+        var access_token = "IGQWRON3BVQ0ZAISXdvUWRZASlhNTlZAUOHZAaRGhaVnFfaTRncUI4VFh0QWpmZA1J4WGhGYmxlTjA0VWVrakdVTjlwSUdFNEVzU0ZAFX0ZAYMzd3OW95cy0xemlCZATlsSHNvbkFtdUFfUWwxU01yNGFBN1I4R2dPcEkwcmcZD";
+        
+        var fullUrl = domainUrl + fields + "&access_token=" + access_token;
+
+        //console.log(fullUrl);
+        fetch(fullUrl)
+            .then(response => response.json())
+            .then(dataArray => {
+                dataArray.data.forEach(element => {
+                document.querySelector("container").innerHTML += `<img src="${element.media_url}">`
+                });
+            })
+    </script>
 </body>
   
 </html>
+
+
+<!-- <div id="app"></div>
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+ Babel Script 
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script type="text/jsx">
+  const domNode = document.getElementById('app');
+  const root = ReactDOM.createRoot(domNode);
+  root.render(<h1>Spartan Swag</h1>); -->
