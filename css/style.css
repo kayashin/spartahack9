@@ -15,13 +15,13 @@ html{
     margin: auto;
 }
 
-#navbar{
+navbar{
     background-color: #f4f4f4;
     color: #044700;
 }
     
-#navbar a{
-    color: #f4f4f4;
+navbar a{
+    color: #044700;
     text-decoration: none;
     font-size: 14px;
     padding-right: 15px;
