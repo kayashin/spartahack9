@@ -16,17 +16,18 @@ html{
 }
 
 navbar{
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     color: #044700;
 }
 
 navbar ul{
     padding: 0;
-    list-style: none;
+    list-style-type: none;
 }
 
 navbar li{
     display: inline;
+    color: #ffffff;
 }
 navbar a{
     color: #044700;
