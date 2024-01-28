@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spartan Swag</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
     <header id="main-header">
@@ -15,8 +16,9 @@
     </header>
     <p style="font-size:2vw"> Welcome to Spartan Swag! </p>
     <p> Let's find some free stuff</p>
-    <div class="container">
-    <script>
+    <div id="instagram-feed1" class="instagram_feed"></div>
+    <script type="text/javascript" src = "jquery-feed-instagram-graph.js"></script>
+    <!-- <script>
         let domainUrl = "https://graph.instagram.com/me/media?"
         let fields = "feilds=media_url"
         var access_token = "IGQWRON3BVQ0ZAISXdvUWRZASlhNTlZAUOHZAaRGhaVnFfaTRncUI4VFh0QWpmZA1J4WGhGYmxlTjA0VWVrakdVTjlwSUdFNEVzU0ZAFX0ZAYMzd3OW95cy0xemlCZATlsSHNvbkFtdUFfUWwxU01yNGFBN1I4R2dPcEkwcmcZD";
@@ -31,7 +33,7 @@
                 document.querySelector("container").innerHTML += `<img src="${element.media_url}">`
                 });
             })
-    </script>
+    </script> -->
 </body>
   
 </html>
