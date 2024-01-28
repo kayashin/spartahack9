@@ -18,24 +18,22 @@ html{
 navbar{
     background-color: #ffffff;
     color: #044700;
-}
-
-navbar ul{
+    ul{
     padding: 0;
     list-style-type: none;
-}
-
-navbar li{
+    }
+    li{
     display: inline;
     color: #ffffff;
-}
-navbar a{
+    }
+    a{
     color: #044700;
     text-decoration: none;
     font-size: 14px;
     padding-right: 15px;
+    } 
 }
-    
+  
 img{
     width: calc(100%/3);
     float: left;
