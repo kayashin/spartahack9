@@ -1,7 +1,7 @@
-// jQuery Ajax for feed Instagram Graph API 
+// jQuery Ajax for feed Instagram Graph API from https://github.com/ribeiroeder/jquery-feed-instagram-graph
 if ( $('#instagram-feed1').length != 0 ) {
 
-    var token = 'IGQWRPNno4WFpXazdZAZAW1yelRmbzdJc2N0ZAFRWd1gyM1RPdW9pOFQ3dl9GTFFyVTRBamNCRnIyaEhBVU4zTFdIZA2tKT0J4WVg2Y2JkdkFXWFR3U1lNLWJVMk1JTDZAENDdEN0xBOFR1eUhCSkVsTHJjWlpNRWdCMzQZD';
+    var token = 'IGQWRNNmw5dnJQeU5KUHNlamFIY2hmZAkZA2QmRlbVJ3LTg3MHk2aU9lcU1XNVRyT2t1TjdhdnVaRjMwNV9vR2VGT1NFUmhwbVhkdE5pYm9EdUZAGblQ4aGR2UDQxY2ROVlJfUVo1RVNXVlpqUHZAqdTVuMm5xcTIxdDgZD';
     var fields = 'id,media_type,media_url,thumbnail_url,timestamp,permalink,caption';
     var limit = 6; // Set a number of display items
 
