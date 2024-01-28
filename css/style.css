@@ -19,7 +19,15 @@ navbar{
     background-color: #f4f4f4;
     color: #044700;
 }
-    
+
+navbar ul{
+    padding: 0;
+    list-style: none;
+}
+
+navbar li{
+    display: inline;
+}
 navbar a{
     color: #044700;
     text-decoration: none;
